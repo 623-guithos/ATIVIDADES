@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Exercícios de Formulários</h1>
+
+    <div class="container">
+
+        <div class="form-card">
+            <h2>1. Cadastro de Usuário</h2>
+            <form id="form-usuario">
+                <div class="form-group">
+                    <label for="user-nome">Nome:</label>
+                    <input type="text" id="user-nome" name="nome" required placeholder="Seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="user-email">E-mail:</label>
+                    <input type="email" id="user-email" name="email" required placeholder="seu.email@exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="user-senha">Senha:</label>
+                    <input type="password" id="user-senha" name="senha" required placeholder="Crie uma senha">
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="form-card">
+            <h2>2. Cadastro de Tarefa</h2>
+            <form id="form-tarefa">
+                <div class="form-group">
+                    <label for="task-titulo">Título:</label>
+                    <input type="text" id="task-titulo" name="titulo" required placeholder="Título da tarefa">
+                </div>
+                <div class="form-group">
+                    <label for="task-desc">Descrição:</label>
+                    <textarea id="task-desc" name="descricao" required placeholder="Detalhes da tarefa..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="task-prioridade">Prioridade:</label>
+                    <select id="task-prioridade" name="prioridade" required>
+                        <option value="">Selecione...</option>
+                        <option value="baixa">Baixa</option>
+                        <option value="media">Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </div>
+                <button type="submit">Cadastrar Tarefa</button>
+            </form>
+        </div>
+
+        <div class="form-card">
+            <h2>3. Reserva de Espaço (Escola)</h2>
+            <form id="form-reserva">
+                <div class="form-group">
+                    <label for="reserva-nome">Nome do Responsável:</label>
+                    <input type="text" id="reserva-nome" name="nome_responsavel" required placeholder="Quem está reservando">
+                </div>
+                <div class="form-group">
+                    <label for="reserva-turma">Turma:</label>
+                    <input type="text" id="reserva-turma" name="turma" required placeholder="Ex: 3º Ano A">
+                </div>
+                <div class="form-group">
+                    <label for="reserva-horario">Horário:</label>
+                    <input type="time" id="reserva-horario" name="horario" required>
+                </div>
+                <button type="submit">Reservar Espaço</button>
+            </form>
+        </div>
+
+        <div class="form-card">
+            <h2>4. Login</h2>
+            <form id="form-login">
+                <div class="form-group">
+                    <label for="login-email">E-mail:</label>
+                    <input type="email" id="login-email" name="email" required placeholder="seu.email@exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="login-senha">Senha:</label>
+                    <input type="password" id="login-senha" name="senha" required placeholder="Sua senha">
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+
+        <div class="form-card">
+            <h2>5. Contato para a Coordenação</h2>
+            <form id="form-contato">
+                <div class="form-group">
+                    <label for="contato-assunto">Assunto:</label>
+                    <input type="text" id="contato-assunto" name="assunto" required placeholder="Motivo do contato">
+                </div>
+                <div class="form-group">
+                    <label for="contato-msg">Mensagem:</label>
+                    <textarea id="contato-msg" name="mensagem" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
